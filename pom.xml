@@ -75,4 +75,7 @@
   	<tag>HEAD</tag>
   	<url>https://github.com/djae138/banque</url>
   </scm>
+  <description>Projet de test.</description>
+  <url>https://github.com/djae138/banque</url>
+  <name>Banque</name>
 </project>
