@@ -6,10 +6,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import banque.Main;
 import junit.framework.TestCase;
 
 public class TestMain extends TestCase {
 
+	protected Main main;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -20,17 +22,18 @@ public class TestMain extends TestCase {
 
 	@Before
 	protected void setUp() throws Exception {
-		super.setUp();
+		
+		main = new Main();
 	}
 
 	@After
 	protected void tearDown() throws Exception {
-		super.tearDown();
+		main = null;
 	}
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		assertEquals(4, main.addition(3, 1));
 	}
 
 }
